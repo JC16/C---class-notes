@@ -1,12 +1,35 @@
+
 #include <stdio.h>
 #include <math.h>
+void func1(void);
+void func1(void)
+    {
+        printf("call function1\n");
+    }
+void func2(double x)
+    {
+        printf("get=%f\n",x);
+    }
+void func3(double x, double y)
+    {
+        printf("area=%f\n",x*y);
+        x=x+10;
+    }
 int main(int argc, const char * argv[])
-{
+    {
 
     // insert code here...
-    printf("Hello, World!\n");
-    double c = pow( 2,3 );
-    printf("pow=%f",c);
-    
-    return 0;
-}
+        printf("Hello, World!\n");
+        double c = pow( 2,3 );
+        printf("pow=%f\n",c);
+        func1();
+        func2(100);
+        func2(200);
+        func2(300);
+        func2(1.8);
+        float width=10.8f;
+        float height=20.1f;
+        func3(width, height);
+        printf("width=%f\n",width);
+        return 0;
+    }

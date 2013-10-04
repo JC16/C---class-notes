@@ -1,0 +1,15 @@
+#include <stdio.h>
+double func(int x)
+    {
+        x=x*x;
+        return x;
+    }
+int main(int argc, const char * argv[])
+{
+
+    // insert code here...
+    int a =10;
+    double b =func(a);
+    printf("b=%f\n",b);
+    return 0;
+}

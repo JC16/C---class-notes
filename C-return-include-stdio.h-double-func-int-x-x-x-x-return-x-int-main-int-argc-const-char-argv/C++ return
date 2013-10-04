@@ -1,15 +1,25 @@
 #include <stdio.h>
-double func(int x)
+double func1(int x)
     {
         x=x*x;
         return x;
+    }
+void func2 (int arr[])
+    {
+        printf("arr=%i\n",arr[1]);
+        arr[1]=arr[1]+1;
     }
 int main(int argc, const char * argv[])
 {
 
     // insert code here...
     int a =10;
-    double b =func(a);
+    double b =func1(a);
     printf("b=%f\n",b);
+    
+    int array[3]={3,13,23};
+    func2(array);
+    printf("array=%i\n",array[1]);
+    
     return 0;
 }

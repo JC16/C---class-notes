@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+#include <math.h>
+#define PI 3.14159
+#define PRINT printf
+#define PR(input) printf("hello3=%f\n", input)
+#define SQR(x) x*x
+double circleArea(double r)
+    {
+        return r*r*PI;
+    }
+int main(int argc, const char * argv[])
+    {
+
+    // insert code here...
+    printf("sin(0.5)=%f\n",sin(0.5));
+    float radius =5.0;
+    printf("Area=%f\n",circleArea(radius));
+        printf("hello");
+        PRINT("hello 2");
+        PR(1.23);
+        PR((float)1500);
+        PRINT("SQR((5.0+2.0))");
+        double x= SQR((3+2));
+        PR(x);
+        
+        
+        
+    return 0;
+    }

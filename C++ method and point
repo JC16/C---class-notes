@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include "header.h"
+
+void method (int x, int *y)
+    {
+        PRI("x", x);
+        PRI("*y", *y);
+        x=x+3;
+        *y=*y+3;
+    }
+int main(int argc, const char * argv[])
+{
+
+    // insert code here...
+    printf("Hello, World!\n");
+    int a=10;
+    int b=10;
+    PRI("a", a);
+    PRI("b", b);
+    method(a, &b);
+    PRI("a", a);
+    PRI("b", b);
+    
+    return 0;
+}

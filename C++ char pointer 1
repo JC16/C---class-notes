@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "Header.h"
+int main(int argc, const char * argv[])
+{
+    printf("Hello, World!\n");
+    char s1[6]="Hello";
+    PRS(s1);
+    PRI("s1[1]", s1[1]);
+    char hi[]="please enter";
+    char name[]=" ";
+    PRS(hi);
+    scanf("%s",name);
+    PRS(name);
+    return 0;
+}
+

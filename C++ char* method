@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include "header.h"
+char* method(char str[])
+    {
+        PRS(str);
+        strcpy(str, "IP");
+        return str;
+        
+    }
+
+int main(int argc, const char * argv[])
+{
+
+    // insert code here...
+    printf("Hello, World!\n");
+    char s1[]="hello";
+    PRS(method(s1));
+    return 0;
+}

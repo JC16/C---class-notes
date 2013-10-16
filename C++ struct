@@ -32,8 +32,22 @@ int main(int argc, const char * argv[])
     PRI("mouseInt",b);
     abc m1={9};
     PRI("m1 no", m1.no);
+    int penstyle=1;
+    switch (penstyle) {
+        case up:
+            printf("A");
+            break;
+        case down:
+            printf("B");
+            break;
+            
+        default:
+            break;
+    }
+    
     return 0;
 }
+
 .h part
 
 ##ifndef project72_Header_h
@@ -90,3 +104,7 @@ struct mouse{
     mouseInt no;
 };
 typedef struct mouse abc;
+enum penstyle{
+    up,
+    down
+};

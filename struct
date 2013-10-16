@@ -1,0 +1,28 @@
+#include "header.h"
+#include <stdio.h>
+struct class
+{
+    int number;
+}class01,class02;
+
+int main(int argc, const char * argv[])
+{
+
+    // insert code here...
+    printf("Hello, World!\n");
+    struct class class01= {10};
+    struct class class02= {20};
+    PRI("class01", class01.number);
+    PRI("class02", class02.number);
+    return 0;
+    
+    
+    
+    struct product p1={1,"10001","Sleeply"};
+        PRI("p1 id",p1.id);
+        PRS("p1 number",p1.number);
+        PRS("p1 name", p1.name);
+        
+    
+    
+}

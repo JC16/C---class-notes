@@ -1,20 +1,16 @@
 #include "header.h"
 #include <stdio.h>
-struct class
-{
-    int number;
-}class01,class02;
 
 int main(int argc, const char * argv[])
 {
 
     // insert code here...
     printf("Hello, World!\n");
-    struct class class01= {10};
-    struct class class02= {20};
+    struct classes class01= {10};
+    struct classes class02= {20};
     PRI("class01", class01.number);
     PRI("class02", class02.number);
-    return 0;
+    
     
     
     
@@ -22,13 +18,23 @@ int main(int argc, const char * argv[])
         PRI("p1 id",p1.id);
         PRS("p1 number",p1.number);
         PRS("p1 name", p1.name);
-        
+    struct item i1={19,2,"1002","chair"};
+    PRI("item ", i1.c01.number);
+    PRI("item id",i1.p01.id);
+    PRSC("item number", i1.p01.number);
+    PRS("item name", i1.p01.name);
+    struct computer c1[3]={3,6,9};
+    int i;
+    for (i=0; i<3; i++) {
+        PRI("c1[]no", c1[i].no);
+    }
     
-    
+    return 0;
 }
+
 .h part
 
-#ifndef project72_Header_h
+##ifndef project72_Header_h
 #define project72_Header_h
 
 
@@ -59,9 +65,21 @@ int main(int argc, const char * argv[])
 double circleArea(double r){
     return r*r*PI;
 }
+struct classes
+{
+    int number;
+}class01,class02;
 struct product
 {
     int id;
     char number[5];
     char *name;
+};
+struct item
+{
+    struct classes c01;
+    struct product p01;
+};
+struct computer{
+    int no ;
 };

@@ -28,10 +28,12 @@ int main(int argc, const char * argv[])
     for (i=0; i<3; i++) {
         PRI("c1[]no", c1[i].no);
     }
-    
+    mouseInt b=100;
+    PRI("mouseInt",b);
+    abc m1={9};
+    PRI("m1 no", m1.no);
     return 0;
 }
-
 .h part
 
 ##ifndef project72_Header_h
@@ -83,3 +85,8 @@ struct item
 struct computer{
     int no ;
 };
+typedef int mouseInt;
+struct mouse{
+    mouseInt no;
+};
+typedef struct mouse abc;

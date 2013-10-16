@@ -1,0 +1,67 @@
+#include "header.h"
+#include <stdio.h>
+struct class
+{
+    int number;
+}class01,class02;
+
+int main(int argc, const char * argv[])
+{
+
+    // insert code here...
+    printf("Hello, World!\n");
+    struct class class01= {10};
+    struct class class02= {20};
+    PRI("class01", class01.number);
+    PRI("class02", class02.number);
+    return 0;
+    
+    
+    
+    struct product p1={1,"10001","Sleeply"};
+        PRI("p1 id",p1.id);
+        PRS("p1 number",p1.number);
+        PRS("p1 name", p1.name);
+        
+    
+    
+}
+.h part
+
+#ifndef project72_Header_h
+#define project72_Header_h
+
+
+
+#endif
+
+//1.
+#include <math.h>
+
+//2. define 的 marco 名稱要全部大寫
+// 完成後，最後不加分號
+#define PI 3.14159
+
+//2.1 指令巨集
+#define P(str) printf("%s\n",str)
+// input = 1.23
+// printf("Hello3 = %f", input)
+#define PR(input) printf("Hello3 = %f\n", input)
+#define PRI(str,input) printf("%s = %i\n", str, input)
+#define PRD(str,input) printf("%s = %f\n", str, input)
+#define PRS(str,input) printf("%s=%s \n", str,input)
+
+//2.2 兩個引數
+#define SQR(x) x*x
+#define PRSC(str,input) printf("%s = %s\n", str, input)
+
+
+double circleArea(double r){
+    return r*r*PI;
+}
+struct product
+{
+    int id;
+    char number[5];
+    char *name;
+};
